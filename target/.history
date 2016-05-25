@@ -1,0 +1,8 @@
+run
+netbeans
+clean
+compile
+publish-local
+project root
+clean
+compile
