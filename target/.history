@@ -6,3 +6,9 @@ publish-local
 project root
 clean
 compile
+project root
+clean
+compile
+project root
+clean
+compile

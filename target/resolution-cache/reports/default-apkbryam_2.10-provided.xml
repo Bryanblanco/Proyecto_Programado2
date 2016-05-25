@@ -3,13 +3,11 @@
 <ivy-report version="1.0">
 	<info
 		organisation="default"
-		module="apkbryam-build"
+		module="apkbryam_2.10"
 		revision="0.1-SNAPSHOT"
-		extra-scalaVersion="2.10"
-		extra-sbtVersion="0.13"
-		conf="test"
+		conf="provided"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160524195128"/>
+		date="20160524195451"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

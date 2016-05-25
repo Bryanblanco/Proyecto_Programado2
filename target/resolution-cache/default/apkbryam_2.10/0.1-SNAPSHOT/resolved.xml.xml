@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
 	<info organisation="default"
-		module="apkbryam-build"
+		module="apkbryam_2.10"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160524195128"
-		e:sbtVersion="0.13" e:scalaVersion="2.10"
+		publication="20160524195451"
 	>
 		<description>
-		apkbryam-build
+		apkbryam
 		</description>
 	</info>
 	<configurations>
@@ -27,14 +26,13 @@
 		<conf name="scala-tool" visibility="private" description=""/>
 	</configurations>
 	<publications>
-		<artifact name="apkbryam-build" type="pom" ext="pom" conf="pom"/>
-		<artifact name="apkbryam-build" type="jar" ext="jar" conf="compile"/>
-		<artifact name="apkbryam-build" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		<artifact name="apkbryam-build" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		<artifact name="apkbryam_2.10" type="pom" ext="pom" conf="pom"/>
+		<artifact name="apkbryam_2.10" type="jar" ext="jar" conf="compile"/>
+		<artifact name="apkbryam_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="apkbryam_2.10" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);provided->default(compile)"/>
-		<dependency org="org.scala-sbt" name="sbt" rev="0.13.5" conf="provided->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
